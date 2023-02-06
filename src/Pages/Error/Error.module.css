@@ -1,0 +1,13 @@
+.Error {
+  height: 100vh;
+  background: linear-gradient(to right, #008894, #ff7111);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.Error img {
+  height: 50%;
+}/*# sourceMappingURL=Error.module.css.map */
