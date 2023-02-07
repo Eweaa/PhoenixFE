@@ -1,0 +1,14 @@
+.login {
+  display: flex;
+}
+.login .LD {
+  width: 30%;
+  height: 97vh;
+  background: #ff7111;
+  color: white;
+  border-radius: 10px;
+}
+.login .RD {
+  width: 70%;
+  height: 97vh;
+}/*# sourceMappingURL=Login.module.css.map */

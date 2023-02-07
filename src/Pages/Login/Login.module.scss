@@ -1,0 +1,15 @@
+.login{
+    display: flex;
+    .LD{
+        width: 30%;
+        height: 97vh;
+        background: #ff7111;
+        color: white;
+        border-radius: 10px;
+        // box-shadow: 4px 4px 5px grey;
+    }
+    .RD{
+        width: 70%;
+        height: 97vh;
+    }
+}
