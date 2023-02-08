@@ -1,5 +1,6 @@
 .login {
   display: flex;
+  overflow: hidden;
 }
 .login .LD {
   width: 30%;
@@ -11,4 +12,9 @@
 .login .RD {
   width: 70%;
   height: 97vh;
+}
+
+.Signup {
+  transform: translatex(100vw);
+  transition: all ease-in-out 0.2s;
 }/*# sourceMappingURL=Login.module.css.map */

@@ -24,10 +24,17 @@ const Navbar = () => {
 
   return (
     <nav className={[NavbarCSS.nav, 'p-2'].join(' ')}>
-        <div className={NavbarCSS.Links}>
-            <img src={Phoenix}/>
+        <div className={NavbarCSS.logo}>
+            <img src={Phoenix} className='mx-2'/>
+            <h2 className='mx-2'>Phoenix</h2>
+        </div>
+        <div className={NavbarCSS.search}>
+            <input type='text' className='p-2' placeholder='search for something here'/>
         </div>
         <div className={NavbarCSS.Profile}>
+            <button className={NavbarCSS.bookBtn}>Book Now</button>
+            <button>I</button>
+            <button>I</button>
             <button onClick={handleLogout}>
                 <img src={GenericUser}/>
             </button>

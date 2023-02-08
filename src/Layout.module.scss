@@ -1,0 +1,28 @@
+.Layout{
+  display: flex;
+  aside{
+    width: 20%;
+    ul{
+      list-style: none;
+      li{
+        padding: 10px;
+        a{
+          padding: 10px;
+          text-decoration: none;
+          color: grey;
+          border-radius: 5px;
+          transition: all ease-in-out 0.2s;
+          &:hover{
+            background: #008894;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  main{
+    background: #f0fbfc;
+    border-radius: 10px;
+    width: 60%;
+  }
+}

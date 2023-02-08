@@ -2,9 +2,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #f0fbfc;
 }
-.nav .Links img {
+.nav .logo {
+  display: flex;
+  align-items: center;
+}
+.nav .logo img {
   width: 50px;
+}
+.nav .logo h2 {
+  color: #008894;
+  font-weight: bold;
+}
+.nav .search {
+  width: 50%;
+}
+.nav .search input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.nav .search input:focus {
+  outline: none;
+}
+.nav .Profile .bookBtn {
+  background: #008894;
+  border-radius: 25px;
+  width: auto;
+  color: white;
+  font-weight: bold;
 }
 .nav .Profile button {
   background: transparent;

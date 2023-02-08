@@ -1,0 +1,28 @@
+.Layout {
+  display: flex;
+}
+.Layout aside {
+  width: 20%;
+}
+.Layout aside ul {
+  list-style: none;
+}
+.Layout aside ul li {
+  padding: 10px;
+}
+.Layout aside ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: grey;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+.Layout aside ul li a:hover {
+  background: #008894;
+  color: white;
+}
+.Layout main {
+  background: #f0fbfc;
+  border-radius: 10px;
+  width: 60%;
+}/*# sourceMappingURL=Layout.module.css.map */

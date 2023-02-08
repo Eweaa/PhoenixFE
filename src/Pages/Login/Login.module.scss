@@ -1,5 +1,6 @@
 .login{
     display: flex;
+    overflow: hidden;
     .LD{
         width: 30%;
         height: 97vh;
@@ -12,4 +13,8 @@
         width: 70%;
         height: 97vh;
     }
+}
+.Signup{
+    transform: translatex(100vw);
+    transition: all ease-in-out 0.2s;
 }
