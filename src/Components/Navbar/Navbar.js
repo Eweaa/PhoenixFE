@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import Phoenix from '../../Assets/Phoenix.png'
 import GenericUser from '../../Assets/GenericUser.jpg'
 import NavbarCSS from './Navbar.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBell, faMessage } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
 
@@ -32,10 +34,14 @@ const Navbar = () => {
             <input type='text' className='p-2' placeholder='search for something here'/>
         </div>
         <div className={NavbarCSS.Profile}>
-            <button className={NavbarCSS.bookBtn}>Book Now</button>
-            <button>I</button>
-            <button>I</button>
-            <button onClick={handleLogout}>
+            <button className={[NavbarCSS.bookBtn, 'mx-1'].join(' ')}>Book Now</button>
+            <button className='mx-1'>
+                <FontAwesomeIcon icon={faBell}/>
+            </button>
+            <button className='mx-1'>
+                <FontAwesomeIcon icon={faMessage}/>
+            </button>
+            <button onClick={handleLogout} className='mx-1'>
                 <img src={GenericUser}/>
             </button>
         </div>

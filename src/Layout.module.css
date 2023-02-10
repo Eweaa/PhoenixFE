@@ -6,6 +6,7 @@
 }
 .Layout aside ul {
   list-style: none;
+  padding: 0;
 }
 .Layout aside ul li {
   padding: 10px;

@@ -1,9 +1,12 @@
+@use './Shared/Variables' as S;
+
 .Layout{
   display: flex;
   aside{
     width: 20%;
     ul{
       list-style: none;
+      padding: 0;
       li{
         padding: 10px;
         a{
@@ -13,7 +16,7 @@
           border-radius: 5px;
           transition: all ease-in-out 0.2s;
           &:hover{
-            background: #008894;
+            background: S.$mainColor;
             color: white;
           }
         }
@@ -21,7 +24,7 @@
     }
   }
   main{
-    background: #f0fbfc;
+    background: S.$accentColor;
     border-radius: 10px;
     width: 60%;
   }

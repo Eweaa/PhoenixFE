@@ -11,6 +11,7 @@ import Signup from './Pages/Signup/Signup';
 import Layout from './Layout';
 import { ProtectedRoute } from './Auth/ProtectedRoute';
 import Error from './Pages/Error/Error';
+import Doctors from './Pages/Doctors/Doctors';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home />
-      }
+      },
+      {
+        path:'/doctors',
+        element:<Doctors />
+      },
     ]
   },
   {

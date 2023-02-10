@@ -28,19 +28,23 @@
   outline: none;
 }
 .nav .Profile .bookBtn {
-  background: #008894;
   border-radius: 25px;
   width: auto;
   color: white;
   font-weight: bold;
 }
 .nav .Profile button {
-  background: transparent;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 50%;
-  overflow: hidden;
+  color: white;
+  background: grey;
+  transition: all ease-in-out 0.4s;
+}
+.nav .Profile button:hover {
+  background: #008894;
+  color: white;
 }
 .nav .Profile button img {
   width: 100%;
