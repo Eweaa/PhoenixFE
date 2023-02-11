@@ -1,1 +1,41 @@
-/*# sourceMappingURL=Signup.module.css.map */
+.Signup {
+  display: flex;
+  background: #f0fbfc;
+  height: 100vh;
+}
+.Signup .LD {
+  width: 50%;
+  background: white;
+  border-radius: 0px 50px 50px 0px;
+}
+.Signup .LD nav {
+  display: flex;
+  align-items: center;
+}
+.Signup .LD nav h3 {
+  font-weight: 700;
+  color: #008894;
+}
+.Signup .LD nav img {
+  width: 100px;
+}
+.Signup .LD .Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Signup .LD h2 {
+  color: #0B4654;
+}
+.Signup .LD button {
+  background: #008894;
+  box-shadow: 0px 2.9566px 2.9566px rgba(0, 0, 0, 0.25), inset 0px 1.4783px 2.9566px rgba(255, 255, 255, 0.25), inset 0px -1.4783px 2.9566px rgba(0, 0, 0, 0.25);
+}
+.Signup .LD a {
+  color: #008894;
+  text-decoration: none;
+  font-weight: 600;
+}
+.Signup .RD {
+  width: 50%;
+}/*# sourceMappingURL=Signup.module.css.map */

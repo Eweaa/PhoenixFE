@@ -1,13 +1,46 @@
+@use '../../Shared/Variables' as S;
+
 .Error{
-    height: 100vh;
-    background: linear-gradient(to right,#008894,#ff7111);
-    color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    img{
-        height: 50%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f0fbfc;
+    .LD{
+        width: 60%;
+        .ErrorImg{
+            position: absolute;
+            z-index: 1;
+            width: 550px;
+            top: 160px;
+        }
+        .Polygon1{
+            position: absolute;
+            height: 100%;
+        }
+    }
+    .RD{
+        width: 40%;
+        div{
+            font-size: 60px;
+            font-weight: 700;
+            color: S.$mainColor;
+            width: 550px;
+            position: absolute;
+            top: 30%;
+            a{
+                background: S.$mainColor;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                text-decoration: none;
+                font-size: 40px;
+                padding: 10px;
+            }
+        }
+        .Polygon2{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
     }
 }
