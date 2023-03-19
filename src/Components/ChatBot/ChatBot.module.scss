@@ -1,0 +1,47 @@
+@use '../../Shared/Variables' as S;
+
+.Chatbot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 1px 0px 45px -16px rgba(0, 0, 0, 0.24);
+    z-index: 100;
+    .chatbotHeader{
+        background: S.$accentColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px;
+        box-shadow: -1px 7px 22px -6px rgba(0, 0, 0, 0.1);;
+        img{
+            width: 40px;
+        }
+        button{
+            outline: none;
+            border: none;
+            color: S.$mainColor;
+            background: transparent;
+            font-weight: bolder;
+        }
+    }
+    // .chatbotMain{
+
+    // }
+    .chatbotFooter{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        // border-radius: 0px 0px 25px 25px;
+        input{
+            background: #D9D9D9;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 0px 0px 25px 25px;
+        }
+    }
+}

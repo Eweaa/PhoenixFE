@@ -12,6 +12,10 @@ import Layout from './Layout';
 import { ProtectedRoute } from './Auth/ProtectedRoute';
 import Error from './Pages/Error/Error';
 import Doctors from './Pages/Doctors/Doctors';
+import Settings from './Pages/Settings/Settings';
+import Watch from './Pages/Watch/Watch';
+import Motivation from './Pages/Motivation/Motivation';
+import BurnDegree from './Pages/BurnDegree/BurnDegree';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,22 @@ const router = createBrowserRouter([
       {
         path:'/doctors',
         element:<Doctors />
+      },
+      {
+        path:'/settings',
+        element:<Settings />
+      },
+      {
+        path:'/watch',
+        element:<Watch />
+      },
+      {
+        path:'/motivation',
+        element:<Motivation />
+      },
+      {
+        path:'/burn-degree',
+        element:<BurnDegree />
       },
     ]
   },

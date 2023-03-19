@@ -22,8 +22,40 @@
   background: #008894;
   color: white;
 }
+.Layout aside .FriendRequest {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.Layout aside .FriendRequest span {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #008894;
+  background: #E5EDFF;
+}
 .Layout main {
   background: #f0fbfc;
+  height: 100vh;
   border-radius: 10px;
   width: 60%;
+  overflow: scroll;
+}
+.Layout .Chatbot {
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #008894;
+}
+.Layout .Chatbot img {
+  width: 100%;
 }/*# sourceMappingURL=Layout.module.css.map */

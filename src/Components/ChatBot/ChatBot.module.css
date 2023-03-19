@@ -1,0 +1,41 @@
+.Chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 400px;
+  width: 400px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 1px 0px 45px -16px rgba(0, 0, 0, 0.24);
+  z-index: 100;
+}
+.Chatbot .chatbotHeader {
+  background: #f0fbfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: -1px 7px 22px -6px rgba(0, 0, 0, 0.1);
+}
+.Chatbot .chatbotHeader img {
+  width: 40px;
+}
+.Chatbot .chatbotHeader button {
+  outline: none;
+  border: none;
+  color: #008894;
+  background: transparent;
+  font-weight: bolder;
+}
+.Chatbot .chatbotFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.Chatbot .chatbotFooter input {
+  background: #D9D9D9;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0px 0px 25px 25px;
+}/*# sourceMappingURL=ChatBot.module.css.map */
