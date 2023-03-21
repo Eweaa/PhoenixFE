@@ -80,6 +80,7 @@ function Layout() {
         <main className='p-2'>
           <Outlet />
         </main>
+        
         <aside className='p-2'>
           <div className={LayoutCSS.FriendRequest}>
             Friends Requests

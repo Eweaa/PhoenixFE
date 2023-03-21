@@ -1,5 +1,22 @@
 .DoctorCard {
+  display: flex;
   background: white;
   height: 300px;
   border-radius: 5px;
+  justify-content: space-between;
+}
+.DoctorCard .Doctorimg {
+  width: 18%;
+}
+.DoctorCard .Doctorimg img {
+  width: 100%;
+  height: 100%;
+}
+.DoctorCard .info {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+.DoctorCard .Appointments {
+  width: 48%;
 }/*# sourceMappingURL=DoctorCard.module.css.map */

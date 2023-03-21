@@ -1,1 +1,1 @@
-{"version":3,"sources":["DoctorCard.module.scss","DoctorCard.module.css"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,kBAAA;ACCJ","file":"DoctorCard.module.css"}
+{"version":3,"sources":["DoctorCard.module.scss","DoctorCard.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,iBAAA;EACA,aAAA;EACA,kBAAA;EACA,8BAAA;ACCJ;ADAI;EACI,UAAA;ACER;ADDQ;EACI,WAAA;EACA,YAAA;ACGZ;ADAI;EACI,aAAA;EACA,sBAAA;EACA,UAAA;ACER;ADAI;EACI,UAAA;ACER","file":"DoctorCard.module.css"}

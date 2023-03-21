@@ -8,7 +8,7 @@ function MessageSender() {
     e.preventDefault();
   };
   return (
-    <div className="messageSender">
+    <div className="messageSender mt-2 mb-3">
       <div className="messageSender__top">
         <Avatar />
         <form>
@@ -32,7 +32,7 @@ function MessageSender() {
           <h3>Feeling</h3>
         </div>
         <div className="messageSender__option">
-          <button className="messagebtn" type="submit" onClick={handleSubmit}>
+          <button className="messagebtn p-2" type="submit" onClick={handleSubmit}>
             Post
           </button>
         </div>
