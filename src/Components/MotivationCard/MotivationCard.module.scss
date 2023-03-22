@@ -1,0 +1,33 @@
+@use '../../Shared/Variables' as S;
+
+.MotivationCard{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.14);
+    border-radius: 15px;
+    // border-bottom: 1px dashed grey;
+    h2{
+        color: S.$mainColor;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .imgContainer{
+        // width: 18%;
+        img{
+            width: 130px;
+            // height: 100px;
+            border-radius: 50%;
+            // background-size: cover;
+            outline: 4px solid S.$mainColor
+        }
+    }
+    .Txt{
+        width: 80%;
+        background: S.$accentColor;
+        border-radius: 15px;
+        box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.14);
+    }
+}

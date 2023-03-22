@@ -6,7 +6,7 @@ import user from '../../Assets/GenericUser.jpg'
 const DoctorCard = (props) => (
     <div className={[DocotrCardCSS.DoctorCard, 'mb-3 p-4'].join(' ')}>
         <div className={DocotrCardCSS.Doctorimg}>
-            <img src={user} alt="profile image"/>
+            <img src={user} alt="profile image" className="img-fluid"/>
         </div>
         <div className={DocotrCardCSS.info}>
             <p>

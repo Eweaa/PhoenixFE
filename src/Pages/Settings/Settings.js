@@ -70,7 +70,7 @@ const Settings = () => {
                   <Col sm={6}>
                     <Form.Control type='text' placeholder='Current Password' className='mb-2'/>
                     <Form.Control type='text' placeholder='New Password' className='mb-2'/>
-                    <Form.Control type='text' placeholder='ReEnter New Password'/>
+                    <Form.Control type='text' placeholder='Reenter New Password'/>
                   </Col>
                 </Form.Group>
 
