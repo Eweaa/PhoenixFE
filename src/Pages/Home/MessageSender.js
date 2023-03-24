@@ -1,11 +1,14 @@
 import { InsertEmoticon, PhotoLibrary, Videocam } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "./MessageSender.css";
 
 function MessageSender() {
+  const [input, setInput] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setInput("");
   };
   return (
     <div className="messageSender mt-2 mb-3">
@@ -13,6 +16,8 @@ function MessageSender() {
         <Avatar />
         <form>
           <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             className="messageSender__input"
             placeholder={`What's happening?`}
           />
@@ -32,7 +37,11 @@ function MessageSender() {
           <h3>Feeling</h3>
         </div>
         <div className="messageSender__option">
-          <button className="messagebtn p-2" type="submit" onClick={handleSubmit}>
+          <button
+            className="messagebtn p-2"
+            type="submit"
+            onClick={handleSubmit}
+          >
             Post
           </button>
         </div>
