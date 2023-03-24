@@ -77,7 +77,7 @@ function Layout() {
 
         </aside>
 
-        <main className='p-2'>
+        <main className='p-2' style={{height: '95vh'}}>
           <Outlet />
         </main>
         
