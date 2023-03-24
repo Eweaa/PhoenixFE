@@ -14,7 +14,10 @@
 }
 .MotivationCard .imgContainer img {
   width: 130px;
+  height: 130px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   outline: 4px solid #008894;
 }
 .MotivationCard .Txt {

@@ -3,6 +3,19 @@
   border: none;
   position: relative;
 }
+.SForm .ProfileImg input {
+  display: none;
+}
+.SForm .ProfileImg img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.SForm .ProfileImg img:hover {
+  cursor: pointer;
+}
 .SForm .SBtn {
   position: absolute;
   bottom: 20px;

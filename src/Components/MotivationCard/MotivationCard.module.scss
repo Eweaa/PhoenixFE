@@ -18,9 +18,9 @@
         // width: 18%;
         img{
             width: 130px;
-            // height: 100px;
+            height: 130px;
             border-radius: 50%;
-            // background-size: cover;
+            object-fit: cover;
             outline: 4px solid S.$mainColor
         }
     }

@@ -31,7 +31,7 @@ const Navbar = () => {
             <h2 className='mx-2'>Phoenix</h2>
         </div>
         <div className={NavbarCSS.search}>
-            <input type='text' className='p-2' placeholder='search for something here'/>
+            <input type='text' className='p-2' placeholder='🔍 Search for something here'/>
         </div>
         <div className={NavbarCSS.Profile}>
             <button className={[NavbarCSS.bookBtn, 'mx-1'].join(' ')}>Book Now</button>
