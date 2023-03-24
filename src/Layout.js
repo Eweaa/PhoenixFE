@@ -82,7 +82,7 @@ function Layout() {
         </main>
         
         <aside className='p-2'>
-          <div className={LayoutCSS.FriendRequest}>
+          <div className={[LayoutCSS.FriendRequest, 'mb-2'].join(' ')}>
             Friends Requests
             <span>
               {friendRequests.length}
@@ -90,6 +90,7 @@ function Layout() {
           </div>
           {friendRequests.map((friendRequest) => <FriendRequest key = {friendRequest.id} name={friendRequest.name}/>)}
         </aside>
+        
         <button className={[LayoutCSS.Chatbot, 'p-2'].join(' ')} onClick={() => setChatbot(!chatbot)} style={{display: chatbot ? 'none' : 'block'}}>
           <img src={Chatbot}/>
         </button>

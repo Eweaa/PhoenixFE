@@ -15,6 +15,7 @@ const BurnDegree = () => {
           Drop an image here <br />
           <input type='file' id='uploadFile'/>
         </label>
+        <button className='p-2'>Result</button>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ import Img from '../../Assets/doctor.jpg'
 const MotivationCard = (props) => {
   return (
     <div className={[MotivationCardCSS.MotivationCard, 'p-4 mb-2'].join(' ')}>
-        <h2 className='p-1'>{props.name}</h2>
+        <h2 className='mb-4'>{props.name}</h2>
         <div className={MotivationCardCSS.Container}>
             <div className={[MotivationCardCSS.imgContainer]}>
                 <img src={Img} alt='test'/>

@@ -23,10 +23,11 @@ function MessageSender() {
           <Videocam style={{ color: "red" }} />
           <h3>Live Video</h3>
         </div>
-        <div className="messageSender__option">
+        <label className="messageSender__option">
+          <input type='file'/>
           <PhotoLibrary style={{ color: "green" }} />
           <h3>Photo/Video</h3>
-        </div>
+        </label>
         <div className="messageSender__option">
           <InsertEmoticon style={{ color: "orange" }} />
           <h3>Feeling</h3>

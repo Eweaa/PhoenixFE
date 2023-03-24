@@ -1,6 +1,7 @@
 import React from 'react'
 import SettingsCSS from './Settings.module.css'
 import { Form, Card, Row, Col, Button } from 'react-bootstrap'
+import Img from '../../Assets/GenericUser.jpg'
 
 const Settings = () => {
   return (
@@ -9,6 +10,12 @@ const Settings = () => {
           <Card.Body>
               <Form>
                 <h3>Edit Profile</h3>
+                <Form.Group className={[SettingsCSS.ProfileImg, 'mb-3'].join(' ')}>
+                  <label>
+                    <input type='file'/>
+                    <img src={Img} alt='photo' />
+                  </label>
+                </Form.Group>
                 <Row className='mb-4'>
 
                   <Col>

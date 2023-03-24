@@ -3,4 +3,22 @@
   background: #fff;
   border-radius: 15px;
   box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.11);
+  position: relative;
+}
+.BurnCard label:hover {
+  cursor: pointer;
+}
+.BurnCard label input {
+  display: none;
+}
+.BurnCard button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #008894;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
 }/*# sourceMappingURL=BurnCard.module.css.map */

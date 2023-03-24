@@ -1,6 +1,13 @@
 .FriendRequest {
   display: flex;
 }
+.FriendRequest img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .FriendRequest .data {
   display: flex;
   flex-direction: column;
@@ -27,7 +34,7 @@
   left: 0;
   background-color: #008894;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-in-out;
 }
 .FriendRequest button:hover::after {
   transform: scaleX(1);
