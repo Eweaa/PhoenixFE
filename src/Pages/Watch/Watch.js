@@ -1,8 +1,13 @@
 import React from 'react'
+import Post from '../Home/Post'
 
 const Watch = () => {
   return (
-    <div>Watch</div>
+    <div className='p-4'> 
+      <Post />
+      <Post />
+      <Post />
+    </div>
   )
 }
 

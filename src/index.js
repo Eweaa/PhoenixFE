@@ -8,7 +8,7 @@ import { AuthProvider } from './Auth/AuthContext';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Signup from './Pages/Signup/Signup';
-import Layout from './Layout';
+import Layout from './Layouts/PatientLayout/Layout';
 import { ProtectedRoute } from './Auth/ProtectedRoute';
 import Error from './Pages/Error/Error';
 import Doctors from './Pages/Doctors/Doctors';
@@ -16,6 +16,49 @@ import Settings from './Pages/Settings/Settings';
 import Watch from './Pages/Watch/Watch';
 import Motivation from './Pages/Motivation/Motivation';
 import BurnDegree from './Pages/BurnDegree/BurnDegree';
+import Doctor from './Pages/Doctor/Doctor';
+import DoctorLayout from './Layouts/DoctorLayout/DoctorLayout';
+import Requests from './Pages/DoctorPages/Requests/Requests';
+import Results from './Pages/DoctorPages/Results/Results';
+
+const doctor = false;
+
+const DoctorRouter = createBrowserRouter([
+  {
+    path:'/',
+    element:<ProtectedRoute><DoctorLayout /></ProtectedRoute>,
+    errorElement:<Error />,
+    children:[
+      {
+
+      },
+      {
+        path:'/watch',
+        element:<Watch />
+      },
+      {
+        path:'/settings',
+        element:<Settings />
+      },
+      {
+        path:'/requests',
+        element:<Requests />
+      },
+      {
+        path:'/results',
+        element:<Results />
+      },
+    ]
+  },
+  {
+    path:'/login',
+    element:<Login />
+  },
+  {
+    path:'/signup',
+    element:<Signup />
+  },
+])
 
 const router = createBrowserRouter([
   {
@@ -30,6 +73,10 @@ const router = createBrowserRouter([
       {
         path:'/doctors',
         element:<Doctors />
+      },
+      {
+        path:'/doctors/:doctorId',
+        element:<Doctor />
       },
       {
         path:'/settings',
@@ -62,7 +109,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
-    <RouterProvider router ={router}/>
+    <RouterProvider router ={doctor ? router : DoctorRouter}/>
   </AuthProvider>
 );
 

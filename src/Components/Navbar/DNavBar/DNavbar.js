@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { useAuth } from '../../Auth/AuthContext'
+import { useAuth } from '../../../Auth/AuthContext'
 import { useNavigate } from 'react-router-dom'
-import Phoenix from '../../Assets/Phoenix.png'
-import GenericUser from '../../Assets/GenericUser.jpg'
-import NavbarCSS from './Navbar.module.css'
+import Phoenix from '../../../Assets/Phoenix.png'
+import GenericUser from '../../../Assets/GenericUser.jpg'
+import NavbarCSS from '../PNavBar/Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faMessage } from '@fortawesome/free-solid-svg-icons'
 
@@ -34,14 +34,13 @@ const Navbar = () => {
             <input type='text' className='p-2' placeholder='🔍 Search for something here'/>
         </div>
         <div className={NavbarCSS.Profile}>
-            <button className={[NavbarCSS.bookBtn, 'mx-1'].join(' ')}>Book Now</button>
-            <button className='mx-1'>
+            <button className='mx-1 p-2'>
                 <FontAwesomeIcon icon={faBell}/>
             </button>
-            <button className='mx-1'>
+            <button className='mx-1 p-2'>
                 <FontAwesomeIcon icon={faMessage}/>
             </button>
-            <button onClick={handleLogout} className='mx-1'>
+            <button onClick={handleLogout} className='mx-1 p-2'>
                 <img src={GenericUser}/>
             </button>
         </div>

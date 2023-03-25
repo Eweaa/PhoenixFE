@@ -1,15 +1,11 @@
-import LayoutCSS from './Layout.module.css';
-import Navbar from './Components/Navbar/Navbar';
-import ChatBot from './Components/ChatBot/ChatBot';
+import LayoutCSS from '../PatientLayout/Layout.module.css';
+import DNavbar from '../../Components/Navbar/DNavBar/DNavbar';
 import { Outlet, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import FriendRequest from './Components/FriendRequest/FriendRequest';
+import FriendRequest from '../../Components/FriendRequest/FriendRequest';
 import { faUserDoctor, faGear, faHandFist, faImage, faUserGroup, faUser, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
-import Chatbot from './Assets/Vector.png'
-import { useState } from 'react';
 
-
-function Layout() {
+const DoctorLayout = () => {
 
   const friendRequests = [
     {
@@ -21,12 +17,10 @@ function Layout() {
       name:'Karen'
     }
   ]
-
-  const [chatbot, setChatbot] = useState(false)
-
+  
   return (
     <div>
-      <Navbar />
+      <DNavbar />
       <div className={[LayoutCSS.Layout, 'p-2'].join(' ')}>
         <aside className='p-2'>
           <ul>
@@ -46,23 +40,16 @@ function Layout() {
             </li>
 
             <li>
-              <Link to='/doctors'>
+              <Link to='/requests'>
                 <FontAwesomeIcon icon={faUserDoctor} className='mx-2'/>
-                Doctors
+                Requests
               </Link>
             </li>
 
             <li>
-              <Link to='/burn-degree'>
+              <Link to='/results'>
                 <FontAwesomeIcon icon={faImage} className='mx-2'/>
-                Identify the burn degree
-              </Link>
-            </li>
-
-            <li>
-              <Link to='/motivation'>
-                <FontAwesomeIcon icon={faHandFist} className='mx-2'/>
-                Motivation
+                Results
               </Link>
             </li>
 
@@ -90,16 +77,9 @@ function Layout() {
           </div>
           {friendRequests.map((friendRequest) => <FriendRequest key = {friendRequest.id} name={friendRequest.name}/>)}
         </aside>
-        
-        <button className={[LayoutCSS.Chatbot, 'p-2'].join(' ')} onClick={() => setChatbot(!chatbot)} style={{display: chatbot ? 'none' : 'block'}}>
-          <img src={Chatbot}/>
-        </button>
-        <div style={{display: chatbot ? 'block' : 'none'}}>
-          <ChatBot toggle={chatbot} togglefunc={setChatbot}/>
-        </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Layout;
+export default DoctorLayout

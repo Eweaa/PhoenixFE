@@ -1,0 +1,37 @@
+.RQT {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.17);
+}
+.RQT .thead {
+  border: none !important;
+  background: #008894;
+}
+.RQT .thead th {
+  color: white;
+  padding: 20px;
+}
+.RQT tr {
+  padding: 20px;
+  border-bottom: 1px dashed grey;
+  border-radius: 15px;
+}
+.RQT td {
+  padding: 20px;
+}
+.RQT .cnclBtn {
+  color: black;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.RQT .cnfrmBtn {
+  color: white;
+  background: #008894;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+}/*# sourceMappingURL=Requests.module.css.map */

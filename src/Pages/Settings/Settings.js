@@ -13,7 +13,7 @@ const Settings = () => {
                 <Form.Group className={[SettingsCSS.ProfileImg, 'mb-3'].join(' ')}>
                   <label>
                     <input type='file'/>
-                    <img src={Img} alt='photo' />
+                    <img src={Img} alt='ass' />
                   </label>
                 </Form.Group>
                 <Row className='mb-4'>
@@ -60,14 +60,14 @@ const Settings = () => {
                     <Form.Check
                       type="radio"
                       label="Male"
-                      name="formHorizontalRadios"
-                      id="formHorizontalRadios1"
+                      name="Gender"
+                      id="Male"
                     />
                     <Form.Check
                       type="radio"
                       label="Female"
-                      name="formHorizontalRadios"
-                      id="formHorizontalRadios1"
+                      name="Gender"
+                      id="Female"
                     />
                   </Col>
                 </Form.Group>
