@@ -109,7 +109,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
-    <RouterProvider router ={doctor ? router : DoctorRouter}/>
+    <RouterProvider router ={doctor ? DoctorRouter : router}/>
   </AuthProvider>
 );
 
