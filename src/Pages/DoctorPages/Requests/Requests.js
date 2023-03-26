@@ -33,7 +33,7 @@ const Requests = () => {
   return (
     <div className='p-4'>
         <table className={[RequestsCSS.RQT, 'p-4'].join(' ')}>
-                <tr className={[RequestsCSS.thead, 'p-4'].join(' ')}>
+                <tr className={[RequestsCSS.thead, RequestsCSS.NB, 'p-4'].join(' ')}>
                     <th style={{borderTopLeftRadius: '15px', borderBottomLeftRadius: '15px'}}>Patient</th>
                     <th>Appointment</th>
                     <th>Gender</th>
@@ -50,6 +50,9 @@ const Requests = () => {
                     </td>
                     <td>{d.status}</td>
                 </tr>)}
+                <tr style={{border:'none'}} className={RequestsCSS.NB}>
+                    <td></td>
+                </tr>
         </table>
     </div>
   )

@@ -30,7 +30,8 @@ const DoctorRouter = createBrowserRouter([
     errorElement:<Error />,
     children:[
       {
-
+        path:'/',
+        element:<Home />
       },
       {
         path:'/watch',

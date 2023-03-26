@@ -1,4 +1,4 @@
-@use '../../Shared/Variables' as S;
+@use '../../../Shared/Variables' as S;
 
 .nav{
     display: flex;
@@ -56,6 +56,7 @@
             img{
                 width: 100%;
                 height: 100%;
+                border-radius: 50%;
             }
         }
     }

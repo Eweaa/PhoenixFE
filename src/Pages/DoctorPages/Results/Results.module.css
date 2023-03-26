@@ -1,24 +1,24 @@
-.RQT {
+.RST {
   width: 100%;
   text-align: center;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.17);
 }
-.RQT .thead {
+.RST .thead {
   border: none !important;
   background: #008894;
 }
-.RQT .thead th {
+.RST .thead th {
   color: white;
   padding: 20px;
 }
-.RQT tr {
+.RST tr {
   padding: 20px;
   border-radius: 15px;
   position: relative;
 }
-.RQT tr::after {
+.RST tr::after {
   content: "";
   height: 1px;
   width: 90%;
@@ -27,23 +27,23 @@
   bottom: 0;
   left: 5%;
 }
-.RQT td {
+.RST td {
   padding: 20px;
 }
-.RQT .cnclBtn {
+.RST .cnclBtn {
   color: black;
   background: transparent;
   border: 1px solid grey;
   border-radius: 10px;
   font-weight: 600;
 }
-.RQT .cnfrmBtn {
+.RST .cnfrmBtn {
   color: white;
   background: #008894;
   border: none;
   font-weight: 600;
   border-radius: 10px;
 }
-.RQT .NB::after {
+.RST .NB::after {
   height: 0;
-}/*# sourceMappingURL=Requests.module.css.map */
+}/*# sourceMappingURL=Results.module.css.map */
