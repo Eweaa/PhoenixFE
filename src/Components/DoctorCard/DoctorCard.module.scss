@@ -1,3 +1,5 @@
+@use '../../Shared/Variables' as S;
+
 .DoctorCard{
     display: flex;
     background: white;
@@ -17,8 +19,41 @@
         display: flex;
         flex-direction: column;
         width: 28%;
+        p{
+            margin: 0;
+        }
     }
     .Appointments{
         width: 48%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .Time{
+            background: S.$accentColor;
+            display: inline-block;
+            width: 30%;
+            border-radius: 5px;
+            box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.09);
+            position: relative;
+            button{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                border: none;
+                outline: none;
+                background: S.$mainColor;
+                color: white;
+                border-radius: 5px;
+            }
+            p{
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 }

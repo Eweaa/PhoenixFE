@@ -32,6 +32,7 @@ const Requests = () => {
 
   return (
     <div className='p-4'>
+        <h3 className='mb-4'>Incoming Requests</h3>
         <table className={[RequestsCSS.RQT, 'p-4'].join(' ')}>
                 <tr className={[RequestsCSS.thead, RequestsCSS.NB, 'p-4'].join(' ')}>
                     <th style={{borderTopLeftRadius: '15px', borderBottomLeftRadius: '15px'}}>Patient</th>

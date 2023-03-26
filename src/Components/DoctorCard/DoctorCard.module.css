@@ -20,6 +20,39 @@
   flex-direction: column;
   width: 28%;
 }
+.DoctorCard .info p {
+  margin: 0;
+}
 .DoctorCard .Appointments {
   width: 48%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.DoctorCard .Appointments .Time {
+  background: #f0fbfc;
+  display: inline-block;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.09);
+  position: relative;
+}
+.DoctorCard .Appointments .Time button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #008894;
+  color: white;
+  border-radius: 5px;
+}
+.DoctorCard .Appointments .Time p {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.DoctorCard .Appointments .Time ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=DoctorCard.module.css.map */

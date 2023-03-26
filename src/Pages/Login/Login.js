@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useAuth } from '../../Auth/AuthContext'
 import { useNavigate, Link } from 'react-router-dom'
-import { Button, Card, Form, Alert } from 'react-bootstrap'
+import { Button, Form, Alert } from 'react-bootstrap'
 import LoginCSS from './Login.module.css'
 import Sign from '../../Assets/Sign.png'
 import Phoenix from '../../Assets/Phoenix.png'
@@ -36,7 +36,7 @@ const Login = () => {
     <div className={[LoginCSS.login, 'p-2'].join(' ')}>
         <div className={[LoginCSS.LD, 'p-5'].join(' ')}>
             <nav className='mb-5'>
-                <img src={Phoenix} className='mx-4'/>
+                <img src={Phoenix} className='mx-4' alt='phoenix logo'/>
                 <h3>Phoenix</h3>
             </nav>
             <div className={LoginCSS.Form}>
@@ -64,7 +64,7 @@ const Login = () => {
             </div>
         </div>
         <div className={LoginCSS.RD}>
-            <img src={Sign}/>
+            <img src={Sign} alt='sign in'/>
         </div>
     </div>
   )

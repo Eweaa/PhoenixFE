@@ -20,8 +20,9 @@ import Doctor from './Pages/Doctor/Doctor';
 import DoctorLayout from './Layouts/DoctorLayout/DoctorLayout';
 import Requests from './Pages/DoctorPages/Requests/Requests';
 import Results from './Pages/DoctorPages/Results/Results';
+import Patient from './Pages/DoctorPages/Patient/Patient';
 
-const doctor = false;
+const doctor = true;
 
 const DoctorRouter = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const DoctorRouter = createBrowserRouter([
         path:'/results',
         element:<Results />
       },
+      {
+        path:'/results/:patientId',
+        element: <Patient />
+      }
     ]
   },
   {

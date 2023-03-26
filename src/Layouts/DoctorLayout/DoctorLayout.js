@@ -3,7 +3,7 @@ import DNavbar from '../../Components/Navbar/DNavBar/DNavbar';
 import { Outlet, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import FriendRequest from '../../Components/FriendRequest/FriendRequest';
-import { faUserDoctor, faGear, faHandFist, faImage, faUserGroup, faUser, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { faUserDoctor, faGear, faImage, faUser, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
 const DoctorLayout = () => {
 

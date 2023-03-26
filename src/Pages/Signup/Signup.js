@@ -39,7 +39,7 @@ const Signup = () => {
     <div className={SignupCSS.Signup}>
       <div className={[SignupCSS.LD, 'p-5'].join(' ')}>
         <nav className='mb-5'>
-          <img src={Phoenix} className='mx-4'/>
+          <img src={Phoenix} className='mx-4' alt='phoenix logo'/>
           <h3>Phoenix</h3>
         </nav>
         <div className={SignupCSS.Form}>
@@ -68,7 +68,7 @@ const Signup = () => {
         </div>
       </div>
       <div className={SignupCSS.RD}>
-        <img src={Sign}/>
+        <img src={Sign} alt='sign up'/>
       </div>
     </div>
   )

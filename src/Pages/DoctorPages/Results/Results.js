@@ -1,34 +1,41 @@
 import React from 'react'
 import ResultsCSS from './Results.module.css'
+import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 import User from '../../../Assets/GenericUser.jpg'
 
 const Results = () => {
 
+  const url = '/results/'
+
   const data = [
     {
-        name:'ahmed',
-        date:'29 Feb 10:30 am',
-        gender: true,
-        degree:'First'
+      id:1,
+      name:'ahmed',
+      date:'29 Feb 10:30 am',
+      gender: true,
+      degree:'First'
     },
     {
-        name:'ahmed',
-        date:'29 Feb 10:30 am',
-        gender: true,
-        degree:'Second'
+      id:2,
+      name:'ahmed',
+      date:'29 Feb 10:30 am',
+      gender: true,
+      degree:'Second'
     },
     {
-        name:'ahmed',
-        date:'29 Feb 10:30 am',
-        gender: true,
-        degree:'Third'
+      id:3,
+      name:'ahmed',
+      date:'29 Feb 10:30 am',
+      gender: true,
+      degree:'Third'
     },
     {
-        name:'ahmed',
-        date:'29 Feb 10:30 am',
-        gender: false,
-        degree:'NA'
+      id:4,
+      name:'ahmed',
+      date:'29 Feb 10:30 am',
+      gender: false,
+      degree:'NA'
     },
 ]
 
@@ -43,13 +50,13 @@ const Results = () => {
                 </tr>
                 {data.map(d => <tr>
                     <td style={{textAlign:'left'}}>
-                      <img src={User} style={{width:'25px', height:'25px',borderRadius:'50%',objectFit:'cover'}} className='mx-1'/>
-                      {d.name}
+                      <img src={User} style={{width:'25px', height:'25px',borderRadius:'50%',objectFit:'cover'}} alt={d.name} className='mx-1'/>
+                      <Link to={url.concat(d.id)}>{d.name}</Link>
                     </td>
                     <td>{d.date}</td>
                     <td style={{fontWeight: '600', color: '#008894'}}>{d.gender ? '🗸' : '☓'}</td>
                     <td>
-                      <div className={classNames('p-2', d.degree == 'First' && 'bg-primary', d.degree == 'Second' && 'bg-warning', d.degree == 'Third' && 'bg-danger', d.degree == 'NA' && 'bg-info')} style={{borderRadius:'15px',width:'50%',display:'inline-block'}}>
+                      <div className={classNames('p-2', d.degree === 'First' && 'bg-primary', d.degree === 'Second' && 'bg-warning', d.degree === 'Third' && 'bg-danger', d.degree === 'NA' && 'bg-info')} style={{borderRadius:'15px',width:'50%',display:'inline-block'}}>
                         {d.degree}
                       </div>
                     </td>
