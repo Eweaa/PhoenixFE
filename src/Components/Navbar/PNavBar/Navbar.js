@@ -44,10 +44,7 @@ const Navbar = () => {
         >
           Book Now
         </Link>
-        <button className="mx-1 p-2">
-          <FontAwesomeIcon icon={faBell} />
-          {/* <Bell /> */}
-        </button>
+        <Bell opt1='1'/>
         <button className="mx-1 p-2">
           <FontAwesomeIcon icon={faMessage} />
         </button>
@@ -56,7 +53,6 @@ const Navbar = () => {
           <img src={GenericUser} />
         </button>
         <div>
-          <Bell />
         </div>
       </div>
     </nav>
