@@ -4,8 +4,11 @@ import user from '../../Assets/GenericUser.jpg'
 import SVG1 from '../../Assets/Vector (2).svg'
 import SVG3 from '../../Assets/Vector (1).svg'
 import SVG2 from '../../Assets/Vector.svg'
+import { Link } from "react-router-dom"
 
 const DoctorCard = (props) => {
+
+    const url = '/doctors/'
     const time = new Date()
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let theday = time.getDay() + 2
@@ -16,9 +19,12 @@ const DoctorCard = (props) => {
             <img src={user} alt="profile image" className="img-fluid"/>
         </div>
         <div className={DocotrCardCSS.info}>
-            <p>
-                {props.Name}
-            </p>
+            <Link to={url.concat(props.ID)} style={{textDecoration:'none', color:'black'}}>
+                Doctor 
+                <b className="mx-1">
+                    {props.Name}
+                </b>
+            </Link>
             <p>
                 {props.JD}
             </p>
