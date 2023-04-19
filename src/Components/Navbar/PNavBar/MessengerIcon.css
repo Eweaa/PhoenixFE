@@ -1,0 +1,27 @@
+.messenger-icon {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.messenger-icon button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.messenger-icon .dropdown {
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 300px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.messenger-icon:hover .messenger-dropdown {
+  display: block;
+}

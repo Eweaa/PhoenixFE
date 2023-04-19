@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Bell from "./Bell";
+import MessengerIcon from "./MessengerIcon";
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
@@ -46,10 +47,11 @@ const Navbar = () => {
         </Link>
         <Bell opt1="1" />
 
-        <button className="mx-1 p-2">
+        {/* <button className="mx-1 p-2">
           <FontAwesomeIcon icon={faMessage} />
-        </button>
+        </button> */}
 
+        <MessengerIcon />
         <button onClick={handleLogout} className="mx-1 p-2">
           <img src={GenericUser} />
         </button>
