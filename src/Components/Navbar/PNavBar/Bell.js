@@ -1,21 +1,28 @@
-import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
-import "./Bell.css";
+import React, { useState } from "react";
+import "./BellTwo.css";
 
-function Bell(props) {
+function Bell() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const handleToggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="dropdown mx-1">
-      <button className="dropdown-toggle" onClick={() => setIsOpen(!isOpen)}>
+    <div className="notification-icon">
+      <button onClick={handleToggleDropdown}>
+        {/* Add the notification icon image */}
+        {/* <NotificationAddOutlined /> */}
         <FontAwesomeIcon icon={faBell} />
-      </button> 
-        <ul className="dropdown-menu" style={{display: isOpen ? 'block' : 'none'}}>
-          <li>{props.opt1}</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
-        </ul>
+      </button>
+      {isOpen && (
+        <div className="dropdown">
+          {/* Add content for the dropdown */}
+          <li>Notification 3.1</li>
+          <li>Notification 3.2</li>
+          <li>Notification 3.3</li>
+        </div>
+      )}
     </div>
   );
 }
