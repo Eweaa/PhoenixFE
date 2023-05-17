@@ -54,10 +54,12 @@ const DoctorCard = (props) => {
                     Today
                 </p>
                 <ul>
-                    <li>12 AM</li>
-                    <li>12:30 AM</li>
-                    <li>1 AM</li>
-                    <li>1:30 AM</li>
+                    <input type="radio" id="12 AM" name="Today" value="12 AM" />
+                    <label for="12 AM">12 AM</label><br />
+                    <input type="radio" id="12:30 AM" name="Today" value="12:30 AM" />
+                    <label for="12:30 AM">12:30 AM</label><br />
+                    <input type="radio" id="1 AM" name="Today" value="1 AM" />
+                    <label for="1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
             </div>
@@ -67,10 +69,12 @@ const DoctorCard = (props) => {
                     Tomorrow
                 </p>
                 <ul>
-                    <li>12 AM</li>
-                    <li>12:30 AM</li>
-                    <li>1 AM</li>
-                    <li>1:30 AM</li>
+                    <input type="radio" id="T12 AM" name="Today" value="12 AM" />
+                    <label for="T12 AM">12 AM</label><br />
+                    <input type="radio" id="T12:30 AM" name="Today" value="12:30 AM" />
+                    <label for="T12:30 AM">12:30 AM</label><br />
+                    <input type="radio" id="T1 AM" name="Today" value="1 AM" />
+                    <label for="T1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
 
@@ -81,10 +85,12 @@ const DoctorCard = (props) => {
                     {time.getDate() + 2}/{time.getMonth()} {days[theday]}
                 </p>
                 <ul>
-                    <li>12 AM</li>
-                    <li>12:30 AM</li>
-                    <li>1 AM</li>
-                    <li>1:30 AM</li>
+                    <input type="radio" id="AT12 AM" name="Today" value="12 AM" />
+                    <label for="AT12 AM">12 AM</label><br />
+                    <input type="radio" id="AT12:30 AM" name="Today" value="12:30 AM" />
+                    <label for="AT12:30 AM">12:30 AM</label><br />
+                    <input type="radio" id="AT1 AM" name="Today" value="1 AM" />
+                    <label for="AT1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
             </div>
