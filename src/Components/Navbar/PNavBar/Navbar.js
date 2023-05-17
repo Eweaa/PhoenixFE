@@ -9,6 +9,7 @@ import { faBell, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Bell from "./Bell";
 import MessengerIcon from "./MessengerIcon";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
@@ -52,6 +53,7 @@ const Navbar = () => {
         </button> */}
 
         <MessengerIcon />
+
         <button onClick={handleLogout} className="mx-1 p-2">
           <img src={GenericUser} />
         </button>

@@ -4,8 +4,11 @@ import user from '../../Assets/GenericUser.jpg'
 import SVG1 from '../../Assets/Vector (2).svg'
 import SVG3 from '../../Assets/Vector (1).svg'
 import SVG2 from '../../Assets/Vector.svg'
+import { Link } from "react-router-dom"
 
 const DoctorCard = (props) => {
+
+    const url = '/doctors/'
     const time = new Date()
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let theday = time.getDay() + 2
@@ -16,9 +19,12 @@ const DoctorCard = (props) => {
             <img src={user} alt="profile image" className="img-fluid"/>
         </div>
         <div className={DocotrCardCSS.info}>
-            <p>
-                {props.Name}
-            </p>
+            <Link to={url.concat(props.ID)} style={{textDecoration:'none', color:'black'}}>
+                Doctor 
+                <b className="mx-1">
+                    {props.Name}
+                </b>
+            </Link>
             <p>
                 {props.JD}
             </p>
@@ -48,10 +54,12 @@ const DoctorCard = (props) => {
                     Today
                 </p>
                 <ul>
-                    <li>12 AM</li>
-                    <li>12:30 AM</li>
-                    <li>1 AM</li>
-                    <li>1:30 AM</li>
+                    <input type="radio" id="12 AM" name="Today" value="12 AM" />
+                    <label for="12 AM">12 AM</label><br />
+                    <input type="radio" id="12:30 AM" name="Today" value="12:30 AM" />
+                    <label for="12:30 AM">12:30 AM</label><br />
+                    <input type="radio" id="1 AM" name="Today" value="1 AM" />
+                    <label for="1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
             </div>
@@ -61,10 +69,12 @@ const DoctorCard = (props) => {
                     Tomorrow
                 </p>
                 <ul>
-                    <li>12 AM</li>
-                    <li>12:30 AM</li>
-                    <li>1 AM</li>
-                    <li>1:30 AM</li>
+                    <input type="radio" id="T12 AM" name="Today" value="12 AM" />
+                    <label for="T12 AM">12 AM</label><br />
+                    <input type="radio" id="T12:30 AM" name="Today" value="12:30 AM" />
+                    <label for="T12:30 AM">12:30 AM</label><br />
+                    <input type="radio" id="T1 AM" name="Today" value="1 AM" />
+                    <label for="T1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
 
@@ -75,10 +85,12 @@ const DoctorCard = (props) => {
                     {time.getDate() + 2}/{time.getMonth()} {days[theday]}
                 </p>
                 <ul>
-                    <li>12 AM</li>
-                    <li>12:30 AM</li>
-                    <li>1 AM</li>
-                    <li>1:30 AM</li>
+                    <input type="radio" id="AT12 AM" name="Today" value="12 AM" />
+                    <label for="AT12 AM">12 AM</label><br />
+                    <input type="radio" id="AT12:30 AM" name="Today" value="12:30 AM" />
+                    <label for="AT12:30 AM">12:30 AM</label><br />
+                    <input type="radio" id="AT1 AM" name="Today" value="1 AM" />
+                    <label for="AT1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
             </div>
