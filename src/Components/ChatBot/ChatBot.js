@@ -14,8 +14,8 @@ const ChatBot = (props) => {
                 </button>
             </header>
             <div className={[ChatbotCSS.chatbotMain, 'p-3'].join(' ')}>
-                ass <br />
-                another ass
+                First Message <br />
+                Another Message
             </div>
             <footer className={ChatbotCSS.chatbotFooter}>
                 <input placeholder='Type your message' className='p-3' />

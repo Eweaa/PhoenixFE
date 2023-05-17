@@ -9,7 +9,7 @@ const MessengerIcon = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="messenger-icon">
+    <div className="messenger-icon mx-1" style={{display:"inline-block"}}>
       <button onClick={handleToggleMessDropdown}>
         {/* Add the notification icon image */}
         <FontAwesomeIcon icon={faMessage} />

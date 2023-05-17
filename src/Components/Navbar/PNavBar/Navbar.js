@@ -46,11 +46,8 @@ const Navbar = () => {
         >
           Book Now
         </Link>
+        
         <Bell opt1="1" />
-
-        {/* <button className="mx-1 p-2">
-          <FontAwesomeIcon icon={faMessage} />
-        </button> */}
 
         <MessengerIcon />
 

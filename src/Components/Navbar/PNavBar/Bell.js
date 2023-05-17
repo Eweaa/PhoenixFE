@@ -9,7 +9,7 @@ function Bell() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="notification-icon">
+    <div className="notification-icon mx-1" style={{display:"inline-block"}}>
       <button onClick={handleToggleDropdown}>
         {/* Add the notification icon image */}
         {/* <NotificationAddOutlined /> */}
