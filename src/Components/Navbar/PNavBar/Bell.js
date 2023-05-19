@@ -26,7 +26,7 @@ function Bell() {
             <div className="notification_content">
               <div className="col">
                 <div className="content-sec">
-                  <img src="https://ilarge.lisimg.com/image/8073204/740full-gentleman.jpg" />
+                  <img src="https://ilarge.lisimg.com/image/8073204/740full-gentleman.jpg" style={{objectFit : "cover"}}/>
                   <div className="text">
                     <p>
                       <span>Moahmmd Elsayed</span> reacted to your post
