@@ -1,0 +1,20 @@
+@use '../../Shared/Variables' as S;
+
+.Reviews{
+    h6{
+        display: inline-block;
+        color: S.$mainColor;
+        position: relative;
+        margin: 0;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: -1px;
+            background-color: S.$mainColor;
+        }
+    }
+    background: white;
+}

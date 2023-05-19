@@ -82,7 +82,7 @@ const DoctorCard = (props) => {
 
             <div className={DocotrCardCSS.Time}>
                 <p>
-                    {time.getDate() + 2}/{time.getMonth()} {days[theday]}
+                    {time.getDate() + 2}/{time.getMonth() + 1} {days[theday]}
                 </p>
                 <ul>
                     <input type="radio" id="AT12 AM" name="Today" value="12 AM" />
