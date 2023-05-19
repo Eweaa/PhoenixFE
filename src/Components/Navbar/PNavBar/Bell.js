@@ -9,7 +9,7 @@ function Bell() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="notification-icon mx-1" style={{display:"inline-block"}}>
+    <div className="notification-icon mx-1" style={{ display: "inline-block" }}>
       <button onClick={handleToggleDropdown}>
         {/* Add the notification icon image */}
         {/* <NotificationAddOutlined /> */}
@@ -17,10 +17,26 @@ function Bell() {
       </button>
       {isOpen && (
         <div className="dropdown">
-          {/* Add content for the dropdown */}
-          <li>Notification 3.1</li>
-          <li>Notification 3.2</li>
-          <li>Notification 3.3</li>
+          <div className="noti-content">
+            <div className="notification_top">
+              <span>Notifications</span>
+              <i>Sttt</i>
+            </div>
+
+            <div className="notification_content">
+              <div className="col">
+                <div className="content-sec">
+                  <img src="https://ilarge.lisimg.com/image/8073204/740full-gentleman.jpg" />
+                  <div className="text">
+                    <p>
+                      <span>Moahmmd Elsayed</span> reacted to your post
+                    </p>
+                    <span className="action_time">5 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>
