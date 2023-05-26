@@ -8,7 +8,7 @@ const Doctors = () => {
   const Doctors = [
     {
       id:1,
-      Name:"Gamal AbdElnasser",
+      Name:"Gamal Abdel Nasser",
       JD:"Consultant dermatologist",
       Rating:69,
       Number:12345
