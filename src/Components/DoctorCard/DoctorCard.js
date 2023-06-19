@@ -10,7 +10,7 @@ const DoctorCard = (props) => {
 
     const url = '/doctors/'
     const time = new Date()
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let theday = time.getDay() + 2
 
   return (
@@ -25,25 +25,25 @@ const DoctorCard = (props) => {
                     {props.Name}
                 </b>
             </Link>
-            <p>
+            <p style={{color:'grey'}}>
                 {props.JD}
             </p>
             <p>
                 {props.Rating}
             </p>
-            <p>
+            <p style={{color:'grey'}}>
                 Overall Rating From {props.NoV} Visitors
             </p>
             <p>
-                <img src={SVG1}/>
+                <img src={SVG1} style={{marginRight:'10px'}}/>
                 A dermatologist specializing in plastic surgery and burns treatment
             </p>
             <p>
-                <img src={SVG2}/>
+                <img src={SVG2} style={{marginRight:'10px'}}/>
                 Start with 2 free sessions
             </p>
             <p>
-                <img src={SVG3}/>
+                <img src={SVG3} style={{marginRight:'10px'}}/>
                 {props.number}
             </p>
         </div>
@@ -55,11 +55,11 @@ const DoctorCard = (props) => {
                 </p>
                 <ul>
                     <input type="radio" id="12 AM" name="Today" value="12 AM" />
-                    <label for="12 AM">12 AM</label><br />
+                    <label htmlFor="12 AM">12 AM</label><br />
                     <input type="radio" id="12:30 AM" name="Today" value="12:30 AM" />
-                    <label for="12:30 AM">12:30 AM</label><br />
+                    <label htmlFor="12:30 AM">12:30 AM</label><br />
                     <input type="radio" id="1 AM" name="Today" value="1 AM" />
-                    <label for="1 AM">1 AM</label>
+                    <label htmlFor="1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
             </div>
@@ -70,11 +70,11 @@ const DoctorCard = (props) => {
                 </p>
                 <ul>
                     <input type="radio" id="T12 AM" name="Today" value="12 AM" />
-                    <label for="T12 AM">12 AM</label><br />
+                    <label htmlFor="T12 AM">12 AM</label><br />
                     <input type="radio" id="T12:30 AM" name="Today" value="12:30 AM" />
-                    <label for="T12:30 AM">12:30 AM</label><br />
+                    <label htmlFor="T12:30 AM">12:30 AM</label><br />
                     <input type="radio" id="T1 AM" name="Today" value="1 AM" />
-                    <label for="T1 AM">1 AM</label>
+                    <label htmlFor="T1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
 
@@ -86,11 +86,11 @@ const DoctorCard = (props) => {
                 </p>
                 <ul>
                     <input type="radio" id="AT12 AM" name="Today" value="12 AM" />
-                    <label for="AT12 AM">12 AM</label><br />
+                    <label htmlFor="AT12 AM">12 AM</label><br />
                     <input type="radio" id="AT12:30 AM" name="Today" value="12:30 AM" />
-                    <label for="AT12:30 AM">12:30 AM</label><br />
+                    <label htmlFor="AT12:30 AM">12:30 AM</label><br />
                     <input type="radio" id="AT1 AM" name="Today" value="1 AM" />
-                    <label for="AT1 AM">1 AM</label>
+                    <label htmlFor="AT1 AM">1 AM</label>
                 </ul>
                 <button>Book</button>
             </div>

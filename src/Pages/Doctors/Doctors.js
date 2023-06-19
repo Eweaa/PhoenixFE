@@ -10,21 +10,21 @@ const Doctors = () => {
       id:1,
       Name:"Gamal Abdel Nasser",
       JD:"Consultant dermatologist",
-      Rating:69,
+      Rating:'⭐⭐⭐⭐',
       Number:12345
     },
     {
       id:2,
       Name:"Mohamed AboElroos",
       JD:"Consultant dermatologist",
-      Rating:4,
+      Rating:'⭐⭐⭐⭐⭐',
       Number:12345
     },
     {
       id:3,
       Name:"Cleopatra",
       JD:"Consultant dermatologist",
-      Rating:5,
+      Rating:'⭐⭐⭐',
       Number:12345
     }
   ]

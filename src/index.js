@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthProvider } from "./Auth/AuthContext";
 import Home from "./Pages/Home/Home";
@@ -21,9 +20,11 @@ import DoctorLayout from "./Layouts/DoctorLayout/DoctorLayout";
 import Requests from "./Pages/DoctorPages/Requests/Requests";
 import Results from "./Pages/DoctorPages/Results/Results";
 import Patient from "./Pages/DoctorPages/Patient/Patient";
+import Profile from "./Pages/Profile/Profile";
 
 const doctor = false;
 
+// #region doctor layout router
 const DoctorRouter = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +59,10 @@ const DoctorRouter = createBrowserRouter([
         path: "/results/:patientId",
         element: <Patient />,
       },
+      {
+        path: "/:userId",
+        element: <Profile />
+      }
     ],
   },
   {
@@ -69,7 +74,9 @@ const DoctorRouter = createBrowserRouter([
     element: <Signup />,
   },
 ]);
+// #endregion
 
+// #region patient layout router
 const router = createBrowserRouter([
   {
     path: "/",
@@ -108,6 +115,10 @@ const router = createBrowserRouter([
         path: "/burn-degree",
         element: <BurnDegree />,
       },
+      {
+        path: "/:userId",
+        element: <Profile />
+      }
     ],
   },
   {
@@ -119,6 +130,7 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
 ]);
+// #endregion
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -126,8 +138,3 @@ root.render(
     <RouterProvider router={doctor ? DoctorRouter : router} />
   </AuthProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -30,8 +30,8 @@
 .nav .Profile .bookBtn {
   border-radius: 25px;
   width: auto;
-  color: white;
-  background: grey;
+  color: #008894;
+  background: #d9d9d9;
   font-weight: bold;
   text-decoration: none;
   transition: all ease-in-out 0.4s;
@@ -44,8 +44,8 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  color: white;
-  background: grey;
+  color: #008894;
+  background: #d9d9d9;
   transition: all ease-in-out 0.4s;
 }
 .nav .Profile button:hover {

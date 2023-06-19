@@ -11,6 +11,8 @@ import { useState } from 'react';
 
 function Layout() {
 
+  const DPL = window.location.href
+  console.log(DPL)
 
 
   const friendRequests = [

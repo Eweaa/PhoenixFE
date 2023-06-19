@@ -12,12 +12,18 @@
         a{
           padding: 10px;
           text-decoration: none;
-          color: grey;
           border-radius: 5px;
+          color: grey;
           transition: all ease-in-out 0.2s;
+          svg{
+            color: S.$mainColor;
+          }
           &:hover{
             background: S.$mainColor;
             color: white;
+            svg{
+              color: white;
+            }
           }
         }
       }
