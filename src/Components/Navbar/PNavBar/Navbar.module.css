@@ -37,6 +37,7 @@
   transition: all ease-in-out 0.4s;
 }
 .nav .Profile .bookBtn:hover {
+  color: white;
   background: #008894;
 }
 .nav .Profile button {
