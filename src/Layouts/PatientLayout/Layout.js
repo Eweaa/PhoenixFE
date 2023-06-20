@@ -18,7 +18,7 @@ function Layout() {
   const friendRequests = [
     {
       id:1,
-      name:'julia'
+      name:'Julia Mauri'
     },
     {
       id:2,

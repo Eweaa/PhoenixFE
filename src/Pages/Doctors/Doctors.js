@@ -8,22 +8,22 @@ const Doctors = () => {
   const Doctors = [
     {
       id:1,
-      Name:"Gamal Abdel Nasser",
+      Name:"Abdallah Walid",
       JD:"Consultant dermatologist",
       Rating:'⭐⭐⭐⭐',
       Number:12345
     },
     {
       id:2,
-      Name:"Mohamed AboElroos",
+      Name:"Salma Ahmed",
       JD:"Consultant dermatologist",
       Rating:'⭐⭐⭐⭐⭐',
       Number:12345
     },
     {
       id:3,
-      Name:"Cleopatra",
-      JD:"Consultant dermatologist",
+      Name:"Mohamed Elsayed",
+      JD:"Consultant therapist",
       Rating:'⭐⭐⭐',
       Number:12345
     }

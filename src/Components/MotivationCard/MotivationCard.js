@@ -1,6 +1,6 @@
 import React from "react";
 import MotivationCardCSS from "./MotivationCard.module.css";
-import Img from "../../Assets/doctor.jpg";
+import Img from "../../Assets/Manal.jpg";
 
 const MotivationCard = (props) => {
   return (
