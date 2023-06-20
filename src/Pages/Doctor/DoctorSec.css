@@ -1,0 +1,20 @@
+.content { 
+    display: flex; 
+    width: 100%; 
+    border-radius: 30px; 
+    margin-bottom: 30px; 
+    background-color: #fff; 
+    /* position: relative; */ 
+  } 
+  .docImg { 
+    /* position: absolute; */ 
+    margin: 20px; 
+    height: 300px; 
+    border-radius: 8px; 
+  } 
+  .rightSide { 
+    margin-top: 20px; 
+  } 
+  .docInfo { 
+    margin-top: 18px; 
+  }
