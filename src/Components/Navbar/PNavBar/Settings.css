@@ -37,3 +37,7 @@
 .iconMohh {
   margin-left: 165px;
 }
+.profBar {
+  border-radius: 50%;
+  object-fit: cover;
+}

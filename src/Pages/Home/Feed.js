@@ -10,19 +10,19 @@ function Feed() {
       <MessageSender />
       <Post
         // key={id}
-        profilePic="https://images.pixexid.com/i35dg0e-a-man-wearing-a-black-shirt.jpeg"
+        profilePic="https://th.bing.com/th/id/OIP.JVTzEEC-CE-ZlheyAFr99wHaE8?pid=ImgDet&w=1068&h=712&rs=1"
         message="Tiny text, also called small text, is a collection of Unicode characters that look like a small font. The small text gives your social media profiles and text messages a tempting appearance and helps you stand out from the crowd. Also, small text is widely used to attract people towards your content by making it more appealing."
-        timestamp="This is timestamp"
+        timestamp="October 11"
         userName="Mohammedelsayed2436"
-        image="https://kaitlinzhang.com/wp-content/uploads/2017/03/how-to-take-a-profile-photo-personal-branding-kaitlin-zhang-15-1024x683.jpg"
+        image="https://th.bing.com/th/id/OIP.lbwKpvSmTfUuBMW8DG6aIgHaLH?pid=ImgDet&rs=1"
       />
       <Post
         // key={id}
-        profilePic="https://images.pixexid.com/i35dg0e-a-man-wearing-a-black-shirt.jpeg"
+        profilePic="https://irp-cdn.multiscreensite.com/d8037e1a/dms3rep/multi/Functional+Medicine+Doctor+Chicago.jpeg"
         message="The demo works"
-        timestamp="This is timestamp"
+        timestamp="October 17"
         userName="Ahmed"
-        image="https://th.bing.com/th/id/R.5d2640166fb9248ee7ae20cbc19a9141?rik=QcfC8%2ft8rnv%2foQ&pid=ImgRaw&r=0"
+        image="https://th.bing.com/th/id/OIP.WkBEkds_0Aarf08fxlLMegHaHa?pid=ImgDet&w=1024&h=1024&rs=1"
       />
       <Widgets />
     </div>

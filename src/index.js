@@ -61,8 +61,8 @@ const DoctorRouter = createBrowserRouter([
       },
       {
         path: "/:userId",
-        element: <Profile />
-      }
+        element: <Profile />,
+      },
     ],
   },
   {
@@ -117,8 +117,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/:userId",
-        element: <Profile />
-      }
+        element: <Profile />,
+      },
     ],
   },
   {

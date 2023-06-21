@@ -6,6 +6,7 @@ import "./Settings.css";
 import SVG from "../../../Assets/Vector (3).svg";
 import SVG2 from "../../../Assets/ic_baseline-log-out.svg";
 import SVG3 from "../../../Assets/angle-right-b.svg";
+import { Avatar } from "@mui/material";
 
 function Settings() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,11 @@ function Settings() {
   return (
     <div className="notification-icon mx-1" style={{ display: "inline-block" }}>
       <button onClick={handleToggleDropdown}>
-        {/* <FontAwesomeIcon icon={faBell} /> */}
+        {/* <FontAwesomeIcon icon={Avatar} /> */}
+        <img
+          className="profBar"
+          src="https://th.bing.com/th/id/R.527c33c37149dfe8297bec9d7e44899a?rik=sx9smtloPK1WdA&pid=ImgRaw&r=0https://th.bing.com/th/id/R.527c33c37149dfe8297bec9d7e44899a?rik=sx9smtloPK1WdA&pid=ImgRaw&r=0"
+        />
       </button>
       {isOpen && (
         <div className="dropdown" style={{ minHeight: "250px" }}>
