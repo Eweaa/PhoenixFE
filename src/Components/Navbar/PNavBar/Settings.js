@@ -23,12 +23,14 @@ function Settings() {
             </div>
             <hr />
             <div className="">
-              <div className="">
+              <div className="setIcon">
                 <i></i>
                 <button className="btnModi">Settings & Privacy</button>
               </div>
-              <i></i>
-              <div className="btnModi">Log Out</div>
+              <div className="btnModi">
+                <i></i>
+                <button className="btnModi">Log Out</button>
+              </div>
             </div>
             {/* <div className="notification_content"> 
               <div className="col"> 
