@@ -1239,17 +1239,34 @@ const BurnDegree = () => {
   const [degree, setDegree] = useState();
   const [message, setMessage] = useState(null);
   const imageRef = useRef();
+  const [image, setImage] = useState(null);
 
-  const details = () => {
-    console.log(
-      imageRef.current.value,
-      file,
-      FDB.find((e) => e === file.name)
-    );
+  const onImageChange = (e) => {
+    if (e.target.files && e.target.files[0]) {
+      setImage(URL.createObjectURL(e.target.files[0]));
+    }
+    console.log(e.target.files[0].name)
+    if (FDB.find((e) => e) === e.target.files[0].name){
+      setDegree("First Degree Burn");
+      setMessage("move to see the first aids for first degree burn");
+      alert('First Degree Burn')
+    }
+  }
+
+  const details = (e) => {
+    // console.log(
+    //   imageRef.current.value,
+    //   file,
+    //   FDB.find((e) => e === file.name)
+    // );
+
+    if (e.target.files && e.target.files[0])
+    setImage(URL.createObjectURL(e.target.files[0]))
 
     if (FDB.find((e) => e === file.name)) {
       setDegree("First Degree Burn");
       setMessage("move to see the first aids for first degree burn");
+      alert('First Degree Burn')
     } else if (SDB.find((e) => e === file.name)) {
       setDegree("Second Degree Burn");
       setMessage("move to see the first aids for second degree burn");
@@ -1274,7 +1291,7 @@ const BurnDegree = () => {
       <div className={[BurnCardCSS.BurnCard, "p-4"].join(" ")}>
         <div className={BurnCardCSS.warning}>
           <p className="p-2" style={{ color: "white" }}>
-            ⚠️ please note that the image you choose must be an rgb image
+            ⚠️ please note that the image you choose must be an RGB image
           </p>
         </div>
         <label htmlFor="uploadFile" className="p-4">
@@ -1288,13 +1305,16 @@ const BurnDegree = () => {
             onChange={() => setFiles(imageRef.current.files[0])}
           />
         </label>
-        {/* <iframe src='https://teachablemachine.withgoogle.com/models/bEjyEcyXq/' /> */}
-        <div
-          className={[BurnCardCSS.result, "p-2"].join(" ")}
-          style={{ display: message === null ? "none" : "block" }}
-        >
+
+        <div>
+          <input type="file" onChange={onImageChange} className="filetype" />
+          <img alt="preview image" src={image} style={{width: '200px'}}/>
+        </div>
+
+        <div className={[BurnCardCSS.result, "p-2"].join(" ")} style={{ display: message === null ? "none" : "block" }}>
           {degree !== null && degree !== undefined && message}
         </div>
+
         <button className="p-2" onClick={details}>
           Result
         </button>
