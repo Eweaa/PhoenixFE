@@ -1,11 +1,33 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import { useAuth } from "../../../Auth/AuthContext";
 import "./Settings.css";
+import SVG from '../../../Assets/Vector (3).svg'
+import SVG2 from '../../../Assets/ic_baseline-log-out.svg'
+import SVG3 from '../../../Assets/angle-right-b.svg'
 
 function Settings() {
+
   const [isOpen, setIsOpen] = useState(false);
+  const {currentUser, logout} = useAuth()
+  const [error, setError] = useState('')
+  const navigate = useNavigate()
+
   const handleToggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleLogout = async () => {
+    try {
+        setError('')
+        await logout()
+        navigate('/login')
+    } catch {
+        setError('Failed to Logout')
+    }
+}
+
   return (
     <div className="notification-icon mx-1" style={{ display: "inline-block" }}>
       <button onClick={handleToggleDropdown}>
@@ -25,10 +47,17 @@ function Settings() {
             <div className="">
               <div className="">
                 <i></i>
-                <button className="btnModi">Settings & Privacy</button>
+                <Link className="btnModi" to='/settings'>
+                  <img src={SVG}/>
+                  Settings & Privacy
+                  <img src={SVG3}/>
+                </Link>
               </div>
-              <i></i>
-              <div className="btnModi">Log Out</div>
+              <button className="btnModi" onClick={handleLogout} style={{border:"none", outline:"none", color:"#4E5D78", display: 'flex'}}>
+                <img src={SVG2}/>
+                Log Out
+                <img src={SVG3}/>
+              </button>
             </div>
             {/* <div className="notification_content"> 
               <div className="col"> 

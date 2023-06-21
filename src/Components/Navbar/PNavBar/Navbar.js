@@ -47,15 +47,9 @@ const Navbar = () => {
         >
           Book Now
         </Link>
-
         <Bell opt1="1" />
-
         <MessengerIcon />
         <Settings />
-
-        <button onClick={handleLogout} className="mx-1 p-2">
-          <img src={GenericUser} />
-        </button>
         <div></div>
       </div>
     </nav>
