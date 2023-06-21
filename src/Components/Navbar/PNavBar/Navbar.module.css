@@ -27,6 +27,9 @@
 .nav .search input:focus {
   outline: none;
 }
+.nav .Profile {
+  display: flex;
+}
 .nav .Profile .bookBtn {
   border-radius: 25px;
   width: auto;

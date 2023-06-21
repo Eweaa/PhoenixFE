@@ -1,10 +1,11 @@
 .container {
   border-radius: 10px;
   margin-top: 5px;
+  height: 55px;
 }
 .imgModi {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin-left: 20px;
   cursor: pointer;
@@ -17,7 +18,22 @@
 }
 .btnModi {
   font-size: 14px;
+  text-decoration: none;
+  color: #4e5d78;
 }
 .setIcon {
   display: flex;
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.iconMo {
+  margin-right: 25px;
+}
+.iconMoh {
+  margin-left: 75px;
+  width: 28px;
+}
+.iconMohh {
+  margin-left: 165px;
 }
