@@ -14,6 +14,7 @@ function MessageSender() {
     <div className="messageSender mt-2 mb-3">
       <div className="messageSender__top">
         <Avatar />
+        {/* <img src="https://th.bing.com/th/id/OIP.1ksdT7JTgpmM_T96EeKIfwAAAA?pid=ImgDet&w=271&h=300&rs=1" /> */}
         <form>
           <input
             value={input}
@@ -29,7 +30,7 @@ function MessageSender() {
           <h3>Live Video</h3>
         </div>
         <label className="messageSender__option">
-          <input type='file'/>
+          <input type="file" />
           <PhotoLibrary style={{ color: "green" }} />
           <h3>Photo/Video</h3>
         </label>
