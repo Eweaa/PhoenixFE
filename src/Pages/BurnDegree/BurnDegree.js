@@ -1241,8 +1241,10 @@ const BurnDegree = () => {
   const imageRef = useRef();
   const [image, setImage] = useState(null);
   const [show, setShow] = useState(true);
+  const [modal, setModal] = useState(false);
 
   const onImageChange = (e) => {
+    setModal(true)
     if (e.target.files && e.target.files[0]) {
       setImage(URL.createObjectURL(e.target.files[0]));
     }
@@ -1319,6 +1321,14 @@ const BurnDegree = () => {
         <button className="p-2" onClick={details}>
           Result
         </button>
+        
+        <div id="myModal" className={BurnCardCSS.modal} style={{display: modal ? 'block' : 'none'}}>
+          <div className={BurnCardCSS.modalContent}>
+            <span className={BurnCardCSS.close} onClick={() => setModal(false)}>&times;</span>
+            <p>{degree}</p>
+          </div>
+        </div>
+
       </div>
     </div>
   );
