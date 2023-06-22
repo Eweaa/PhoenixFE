@@ -1240,33 +1240,33 @@ const BurnDegree = () => {
   const [message, setMessage] = useState(null);
   const imageRef = useRef();
   const [image, setImage] = useState(null);
+  const [show, setShow] = useState(true);
 
   const onImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
       setImage(URL.createObjectURL(e.target.files[0]));
     }
-    console.log(e.target.files[0].name)
-    if (FDB.find((e) => e) === e.target.files[0].name){
+    setShow(false)
+    let name = e.target.files[0].name
+    if (FDB.find((e) => e === name)){
       setDegree("First Degree Burn");
       setMessage("move to see the first aids for first degree burn");
-      alert('First Degree Burn')
+    }
+    if (SDB.find((e) => e === name)){
+      setDegree("Second Degree Burn")
+      setMessage("move to see the first aids for the second degree burn")
+    }
+    if (TDB.find((e) => e === name)){
+      setDegree("Third Degree Burn")
+      setMessage("move to see the first aids for the third degree burn")
     }
   }
 
   const details = (e) => {
-    // console.log(
-    //   imageRef.current.value,
-    //   file,
-    //   FDB.find((e) => e === file.name)
-    // );
-
-    if (e.target.files && e.target.files[0])
-    setImage(URL.createObjectURL(e.target.files[0]))
 
     if (FDB.find((e) => e === file.name)) {
       setDegree("First Degree Burn");
       setMessage("move to see the first aids for first degree burn");
-      alert('First Degree Burn')
     } else if (SDB.find((e) => e === file.name)) {
       setDegree("Second Degree Burn");
       setMessage("move to see the first aids for second degree burn");
@@ -1294,22 +1294,23 @@ const BurnDegree = () => {
             ⚠️ please note that the image you choose must be an RGB image
           </p>
         </div>
-        <label htmlFor="uploadFile" className="p-4">
+        <label htmlFor="uploadFile" className="p-4" style={{display: show ? 'block' : 'none'}}>
           <img src={Camera} className="p-4" /> <br />
           Drop an image here <br />
-          <input
+          {/* <input
             type="file"
             id="uploadFile"
             ref={imageRef}
             // onChange={ e => setFiles(e.target.value)}
             onChange={() => setFiles(imageRef.current.files[0])}
-          />
+          /> */}
+          <input type="file" id="uploadFile" onChange={onImageChange} className="filetype" />
         </label>
 
         <div>
-          <input type="file" onChange={onImageChange} className="filetype" />
-          <img alt="preview image" src={image} style={{width: '200px'}}/>
+          <img alt="preview image" src={image}/>
         </div>
+
 
         <div className={[BurnCardCSS.result, "p-2"].join(" ")} style={{ display: message === null ? "none" : "block" }}>
           {degree !== null && degree !== undefined && message}
