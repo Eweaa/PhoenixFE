@@ -24,7 +24,7 @@ const Doctors = () => {
     {
       id: 3,
 
-      Name: "Mohamed Elsayed",
+      Name: "Mohamed Fahmy",
       JD: "Consultant therapist",
       Rating: "⭐⭐⭐",
       Number: 12345,

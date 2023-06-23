@@ -76,7 +76,16 @@ const Results = () => {
                 alt={d.name}
                 className="mx-1 namesProp"
               />
-              <Link to={url.concat(d.id)}>{d.name}</Link>
+              <Link
+                to={url.concat(d.id)}
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  marginRight: "10px",
+                }}
+              >
+                {d.name}
+              </Link>
             </td>
             <td>{d.date}</td>
             <td style={{ fontWeight: "600", color: "#008894" }}>
