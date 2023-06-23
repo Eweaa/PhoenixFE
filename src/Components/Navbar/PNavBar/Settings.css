@@ -37,7 +37,16 @@
 .iconMohh {
   margin-left: 165px;
 }
+.upBtn {
+  position: relative;
+}
 .profBar {
+  position: absolute;
+  right: -1px;
+  bottom: 2px;
+  width: 44px;
+  height: 39px;
+  /* background-image: url("https://th.bing.com/th/id/OIP.1xtkWobfLlaNWXop1_t0EQHaHa?pid=ImgDet&w=1080&h=1080&rs=1"); */
   border-radius: 50%;
   object-fit: cover;
 }

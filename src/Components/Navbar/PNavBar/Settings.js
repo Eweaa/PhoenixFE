@@ -30,12 +30,13 @@ function Settings() {
 
   return (
     <div className="notification-icon mx-1" style={{ display: "inline-block" }}>
-      <button onClick={handleToggleDropdown}>
+      <button onClick={handleToggleDropdown} className="upBtn">
         {/* <FontAwesomeIcon icon={Avatar} /> */}
         <img
           className="profBar"
           src="https://th.bing.com/th/id/R.527c33c37149dfe8297bec9d7e44899a?rik=sx9smtloPK1WdA&pid=ImgRaw&r=0https://th.bing.com/th/id/R.527c33c37149dfe8297bec9d7e44899a?rik=sx9smtloPK1WdA&pid=ImgRaw&r=0"
         />
+        {/* <div className="profBar"></div> */}
       </button>
       {isOpen && (
         <div className="dropdown" style={{ minHeight: "250px" }}>
