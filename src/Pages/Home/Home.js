@@ -9,8 +9,9 @@ const Home = () => {
   const [posts, setPosts] = React.useState([])
 
   const getPosts = () => {
-    axios.get("http://pied_piper_backend.test/api/allPosts").then(res => {
+    axios.get("https://harajalkamel.com/api/allPosts").then(res => {
       setPosts(res.data)
+      console.log(posts)
     })
   }
 

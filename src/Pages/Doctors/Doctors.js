@@ -15,7 +15,7 @@ const Doctors = () => {
     },
     {
       id: 2,
-      Name: "Salma Ahmed",
+      Name: "Mohamed Elsayed",
       JD: "Consultant dermatologist",
       Rating: "⭐⭐⭐⭐⭐",
       Number: 12345,

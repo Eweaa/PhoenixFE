@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import DocotrCardCSS from "./DoctorCard.module.css";
 import user from "../../Assets/GenericUser.jpg";
 import SVG1 from "../../Assets/Vector (2).svg";
 import SVG3 from "../../Assets/Vector (1).svg";
 import SVG2 from "../../Assets/Vector.svg";
 import { Link } from "react-router-dom";
+import BurnCardCSS from '../../Pages/BurnDegree/BurnCard.module.css'
 
 const DoctorCard = (props) => {
   const url = "/doctors/";
   const time = new Date();
+  const [modal, setModal] = useState(false);
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let theday = time.getDay() + 2;
 
@@ -56,7 +58,7 @@ const DoctorCard = (props) => {
             <input type="radio" id="1 AM" name="Today" value="1 AM" />
             <label htmlFor="1 AM">1 AM</label>
           </ul>
-          <button>Book</button>
+          <button onClick={() => setModal(true)}>Book</button>
         </div>
 
         <div className={DocotrCardCSS.Time}>
@@ -71,7 +73,7 @@ const DoctorCard = (props) => {
             <input type="radio" id="T1 AM" name="Today" value="1 AM" />
             <label htmlFor="T1 AM">1 AM</label>
           </ul>
-          <button>Book</button>
+          <button onClick={() => setModal(true)}>Book</button>
         </div>
 
         <div className={DocotrCardCSS.Time}>
@@ -88,7 +90,14 @@ const DoctorCard = (props) => {
             <input type="radio" id="AT1 AM" name="Today" value="1 AM" />
             <label htmlFor="AT1 AM">1 AM</label>
           </ul>
-          <button>Book</button>
+          <button onClick={() => setModal(true)}>Book</button>
+        </div>
+      </div>
+
+      <div id="myModal" className={BurnCardCSS.modal} style={{display: modal ? 'block' : 'none'}}>
+        <div className={BurnCardCSS.modalContent}>
+          <span className={BurnCardCSS.close} onClick={() => setModal(false)}>&times;</span>
+          <p>Your appointment have been booked</p>
         </div>
       </div>
     </div>
