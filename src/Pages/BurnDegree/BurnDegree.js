@@ -1319,9 +1319,9 @@ const BurnDegree = () => {
         </div>
 
 
-        <div className={[BurnCardCSS.result, "p-2 mt-2"].join(" ")} style={{ display: message === null ? "none" : "block" }}>
+        <Link to='/watch' className={[BurnCardCSS.result, "p-2 mt-2"].join(" ")} style={{ display: message === null ? "none" : "block", textDecoration: 'none'}}>
           {degree !== null && degree !== undefined && message}
-        </div>
+        </Link>
 
         {/* <button className="p-2" onClick={details}>
           Result
@@ -1329,7 +1329,7 @@ const BurnDegree = () => {
         
         <div id="myModal" className={BurnCardCSS.modal} style={{display: modal ? 'block' : 'none'}}>
           <div className={BurnCardCSS.modalContent}>
-            <span className={BurnCardCSS.close} onClick={() => setModal(false)}>&times;</span>
+            <span className={BurnCardCSS.close} style={{cursor: 'pointer'}} onClick={() => setModal(false)}>&times;</span>
             <p>{degree}</p>
           </div>
         </div>

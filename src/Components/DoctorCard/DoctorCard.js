@@ -96,7 +96,7 @@ const DoctorCard = (props) => {
 
       <div id="myModal" className={BurnCardCSS.modal} style={{display: modal ? 'block' : 'none'}}>
         <div className={BurnCardCSS.modalContent}>
-          <span className={BurnCardCSS.close} onClick={() => setModal(false)}>&times;</span>
+          <span className={BurnCardCSS.close} style={{cursor: 'pointer'}} onClick={() => setModal(false)}>&times;</span>
           <p>Your appointment have been booked</p>
         </div>
       </div>

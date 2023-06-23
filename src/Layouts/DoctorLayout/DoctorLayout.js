@@ -10,11 +10,15 @@ const DoctorLayout = () => {
   const friendRequests = [
     {
       id:1,
-      name:'julia'
+      name:'Mohamed'
     },
     {
       id:2,
-      name:'Karen'
+      name:'Zaki'
+    },
+    {
+      id:3,
+      name: 'Yousef'
     }
   ]
   

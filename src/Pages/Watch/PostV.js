@@ -27,7 +27,7 @@ function Post({ profilePic, image, userName, timestamp, message }) {
 
       <div className="post_image">
         {/* <video src="" /> */}
-        <video width="842" height="500" controls>
+        <video width="842" height="500" controls autoPlay>
           <source src={Camp} type="video/mp4" />
         </video>
       </div>

@@ -42,6 +42,9 @@
   border-radius: 20px;
   margin-inline: auto;
 }
+.result:hover {
+  color: white;
+}
 
 .modal {
   position: fixed;
