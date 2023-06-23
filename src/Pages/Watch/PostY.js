@@ -8,21 +8,22 @@ import {
 import { Avatar } from "@mui/material";
 import React from "react";
 import CampY from "./Comp3.mp4";
+import Image from "../../Assets/Phoenix.png";
 
 function Post({ profilePic, image, userName, timestamp, message }) {
   return (
     <div className="post mb-3">
       <div className="post_top">
-        <Avatar src={profilePic} className="post_avatar" />
+        <Avatar src={Image} className="post_avatar" />
         <div className="post_topInfo">
-          <h3>{userName}</h3>
-          <p>October 11</p>
+          <h3>Third Degree Burn</h3>
+          {/* <p>October 11</p> */}
         </div>
       </div>
 
-      <div className="post_bottom">
+      {/* <div className="post_bottom">
         <p>{message}</p>
-      </div>
+      </div> */}
 
       <div className="post_image">
         {/* <video src="" /> */}

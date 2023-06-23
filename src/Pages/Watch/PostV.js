@@ -16,8 +16,8 @@ function Post({ profilePic, image, userName, timestamp, message }) {
       <div className="post_top">
         <Avatar src={Image} className="post_avatar" />
         <div className="post_topInfo">
-          <h3>First Degree</h3>
-          <p></p>
+          <h3>First Degree Burn</h3>
+          {/* <p></p> */}
         </div>
       </div>
 
