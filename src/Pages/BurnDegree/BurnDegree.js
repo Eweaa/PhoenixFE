@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Camera from "../../Assets/Vector (2).png";
 import BurnCardCSS from "./BurnCard.module.css";
+import { Link } from "react-router-dom";
 
 const BurnDegree = () => {
   // #region first degree burn
@@ -1254,13 +1255,17 @@ const BurnDegree = () => {
       setDegree("First Degree Burn");
       setMessage("move to see the first aids for first degree burn");
     }
-    if (SDB.find((e) => e === name)){
+    else if (SDB.find((e) => e === name)){
       setDegree("Second Degree Burn")
       setMessage("move to see the first aids for the second degree burn")
     }
-    if (TDB.find((e) => e === name)){
+    else if (TDB.find((e) => e === name)){
       setDegree("Third Degree Burn")
       setMessage("move to see the first aids for the third degree burn")
+    }
+    else{
+      setDegree("Couldn't identify the degree")
+      setMessage("Couldn't identify the degree")
     }
   }
 
@@ -1293,7 +1298,7 @@ const BurnDegree = () => {
       <div className={[BurnCardCSS.BurnCard, "p-4"].join(" ")}>
         <div className={BurnCardCSS.warning}>
           <p className="p-2" style={{ color: "white" }}>
-            ⚠️ please note that the image you choose must be an RGB image
+            ⚠️ Please note that the image you choose must be an RGB image
           </p>
         </div>
         <label htmlFor="uploadFile" className="p-4" style={{display: show ? 'block' : 'none'}}>
@@ -1309,18 +1314,18 @@ const BurnDegree = () => {
           <input type="file" id="uploadFile" onChange={onImageChange} className="filetype" />
         </label>
 
-        <div>
+        <div style={{display: show ? 'none' : 'block'}}>
           <img alt="preview image" src={image}/>
         </div>
 
 
-        <div className={[BurnCardCSS.result, "p-2"].join(" ")} style={{ display: message === null ? "none" : "block" }}>
+        <div className={[BurnCardCSS.result, "p-2 mt-2"].join(" ")} style={{ display: message === null ? "none" : "block" }}>
           {degree !== null && degree !== undefined && message}
         </div>
 
-        <button className="p-2" onClick={details}>
+        {/* <button className="p-2" onClick={details}>
           Result
-        </button>
+        </button> */}
         
         <div id="myModal" className={BurnCardCSS.modal} style={{display: modal ? 'block' : 'none'}}>
           <div className={BurnCardCSS.modalContent}>
