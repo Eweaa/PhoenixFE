@@ -22,7 +22,7 @@ import Results from "./Pages/DoctorPages/Results/Results";
 import Patient from "./Pages/DoctorPages/Patient/Patient";
 import Profile from "./Pages/Profile/Profile";
 
-const doctor = true;
+const doctor = false;
 
 // #region doctor layout router
 const DoctorRouter = createBrowserRouter([
